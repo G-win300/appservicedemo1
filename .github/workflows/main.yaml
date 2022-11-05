@@ -22,6 +22,7 @@ jobs:
         uses: azure/login@v1
         with: 
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          enable-AzPSSession: true
 
       # this step tells the runner what .dotnet configuration version to use
       - name: setup .NET CORE
